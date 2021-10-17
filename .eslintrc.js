@@ -24,6 +24,18 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
+  settings: {
+    // for alias
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@components', './components'],
+          ['@pages', './pages'],
+          ['@icons', './components/Icons/index.tsx']
+        ]
+      }
+    }
+  },
   rules: {
     'linebreak-style': 'off',
     '@typescript-eslint/camelcase': 'off',

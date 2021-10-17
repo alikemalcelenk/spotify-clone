@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
-// icons
-import * as Icons from '../components/Icons'
+import * as Icons from '@icons'
 
 const HomePage: FunctionComponent = () => {
   return (
