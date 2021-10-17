@@ -23,6 +23,9 @@
             "@components/*": [
                 "components/*"
             ],
+            "@elements": [
+                "components/Elements/index.tsx"
+            ],
             "@pages/*": [
                 "pages/*"
             ],

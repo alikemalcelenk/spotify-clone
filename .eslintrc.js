@@ -30,6 +30,7 @@ module.exports = {
       alias: {
         map: [
           ['@components', './components'],
+          ['@elements', './components/Elements/index.tsx'],
           ['@pages', './pages'],
           ['@icons', './components/Icons/index.tsx']
         ]
