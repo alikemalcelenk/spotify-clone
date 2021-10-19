@@ -42,6 +42,10 @@ module.exports = {
     '@typescript-eslint/camelcase': 'off',
     'import/prefer-default-export': 'off',
     'react/react-in-jsx-scope': 'off',
+    'import/no-unresolved': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-nested-ternary': 'off',
     'prettier/prettier': [
       'error',
       {

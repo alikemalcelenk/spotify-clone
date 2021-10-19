@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    font-family: SFProDisplay-Medium;
+  }
+
+  @font-face {
+    font-family: SFProDisplay-SemiBold;
+    font-display: swap;
+    src: url('./fonts/subset-SFProDisplay-Semibold.woff2') format('woff2'),
+      url('./fonts/subset-SFProDisplay-Semibold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: SFProDisplay-Medium;
+    font-display: swap;
+    src: url('./fonts/subset-SFProDisplay-Medium.woff2') format('woff2'),
+      url('./fonts/subset-SFProDisplay-Medium.woff') format('woff');
+  }
+}
+
 @layer utilities {
   .flex-center {
     display: flex;

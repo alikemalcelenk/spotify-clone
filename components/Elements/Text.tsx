@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-const Text = styled.p.attrs({
-  className: 'text-text text-sm'
+const Text: any = styled.p.attrs({
+  className: 'text-sm text-text'
 })``
 
 export default Text

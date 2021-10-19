@@ -4,14 +4,28 @@ import * as Icons from '@icons'
 
 import { Box } from '@elements'
 
-const NavBar: FunctionComponent = () => {
+import NavBarButton from './NavBarButton'
+
+type NavBarContentType = {
+  selectedPage: string
+}
+
+const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
   return (
     <Box className="bg-background-nav-bar">
       <Box className="p-6 ">
         <Icons.Logo className="text-white h-40px w-131px" />
       </Box>
-      <Box></Box>
+      <Box className="px-2 ">
+        <NavBarButton selected={selectedPage === 'home'} type="home" />
+        <NavBarButton selected={selectedPage === 'search'} type="search" />
+        <NavBarButton
+          selected={selectedPage === 'collection'}
+          type="collection"
+        />
+      </Box>
     </Box>
   )
 }
+
 export default NavBar

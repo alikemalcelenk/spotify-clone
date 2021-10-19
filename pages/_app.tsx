@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 import { AppProps } from 'next/app'
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 import 'tailwindcss/tailwind.css'
 
 import '../styles/global.css'

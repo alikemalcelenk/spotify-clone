@@ -6,11 +6,11 @@ import NavBar from '@components/NavBar'
 import Footer from '@components/Footer'
 import Content from '@components/Content'
 
-const HomePage: FunctionComponent = () => {
+const CollectionPage: FunctionComponent = () => {
   return (
     <Box className="grid grid-rows-main-layout h-screen">
       <Box className="grid grid-cols-content">
-        <NavBar selectedPage="home" />
+        <NavBar selectedPage="collection" />
         <Content />
       </Box>
       <Footer />
@@ -18,4 +18,4 @@ const HomePage: FunctionComponent = () => {
   )
 }
 
-export default HomePage
+export default CollectionPage
