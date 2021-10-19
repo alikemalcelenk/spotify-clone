@@ -2,11 +2,11 @@ import { FunctionComponent } from 'react'
 
 import { Box, Text } from '@elements'
 
-const Content: FunctionComponent = () => {
+const ContentHome: FunctionComponent = () => {
   return (
     <Box className="bg-background-content">
-      <Text>content</Text>
+      <Text>content home</Text>
     </Box>
   )
 }
-export default Content
+export default ContentHome

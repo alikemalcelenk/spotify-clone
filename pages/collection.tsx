@@ -4,7 +4,7 @@ import { Box } from '@elements'
 
 import NavBar from '@components/NavBar'
 import Footer from '@components/Footer'
-import Content from '@components/Content'
+import Content from '@components/ContentCollection'
 
 const CollectionPage: FunctionComponent = () => {
   return (
