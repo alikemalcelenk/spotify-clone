@@ -9,7 +9,6 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      blue: colors.blue,
       'background-content': '#121212',
       'background-footer': '#181818',
       'background-nav-bar': '#000',
@@ -22,6 +21,10 @@ module.exports = {
       },
       gridTemplateColumns: {
         content: '235px 1fr'
+      },
+      spacing: {
+        '40px': '40px',
+        '131px': '131px'
       }
     }
   },

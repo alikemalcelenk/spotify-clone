@@ -1,11 +1,16 @@
 import { FunctionComponent } from 'react'
 
-import { Box, Text } from '@elements'
+import * as Icons from '@icons'
+
+import { Box } from '@elements'
 
 const NavBar: FunctionComponent = () => {
   return (
     <Box className="bg-background-nav-bar">
-      <Text>nav bar</Text>
+      <Box className="p-6 ">
+        <Icons.Logo className="text-white h-40px w-131px" />
+      </Box>
+      <Box></Box>
     </Box>
   )
 }

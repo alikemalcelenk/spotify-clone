@@ -1,8 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import * as Icons from '@icons'
-
-import { Box, Text, Button } from '@elements'
+import { Box } from '@elements'
 
 import NavBar from '@components/NavBar'
 import Footer from '@components/Footer'
