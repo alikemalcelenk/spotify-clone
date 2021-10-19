@@ -4,12 +4,18 @@ import * as Icons from '@icons'
 
 import { Box, Text, Button } from '@elements'
 
+import NavBar from '@components/NavBar'
+import Footer from '@components/Footer'
+import Content from '@components/Content'
+
 const HomePage: FunctionComponent = () => {
   return (
-    <Box className="bg-blue-100">
-      <Text>Welcome to Next.js!</Text>
-      <Icons.Home className="text-blue-500" />
-      <Button className="h-32 w-32 bg-blue-400">test</Button>
+    <Box className="grid grid-rows-main-layout h-screen">
+      <Box className="grid grid-cols-content">
+        <NavBar />
+        <Content />
+      </Box>
+      <Footer />
     </Box>
   )
 }
