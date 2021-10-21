@@ -24,6 +24,11 @@ const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
           type="collection"
         />
       </Box>
+
+      <Box className="px-2 mt-6">
+        <NavBarButton type="createPlaylist" />
+        <NavBarButton type="likedSongs" />
+      </Box>
     </Box>
   )
 }

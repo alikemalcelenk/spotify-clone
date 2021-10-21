@@ -9,13 +9,14 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      purple: '#4101F5',
+      'soft-purple': '#BEE9D7',
       'background-content': '#121212',
       'background-footer': '#181818',
       'background-nav-bar': '#000000',
       'background-nav-bar-button': '#282828',
       'footer-top': '#282828',
-      text: '#FFFFFF',
-      'text-unselected': '#B3B3B3'
+      text: '#FFFFFF'
     },
     extend: {
       gridTemplateRows: {
