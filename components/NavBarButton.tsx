@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import * as Icons from '@icons'
 
-import { Box, Text } from '@elements'
+import { Box, Text, LinkBox } from '@elements'
 
 type NavBarButtonContentType = {
   type: string
@@ -25,7 +25,7 @@ const NavBarButton: FunctionComponent<NavBarButtonContentType> = ({
 
   return (
     <Link href={href} passHref>
-      <Box
+      <LinkBox
         className={`flex items-center py-2 px-4 rounded cursor-pointer ${
           selected ? 'bg-background-nav-bar-button' : 'group hover:text-text '
         }`}
@@ -58,11 +58,13 @@ const NavBarButton: FunctionComponent<NavBarButtonContentType> = ({
           <Box className="flex items-center justify-center bg-text h-6 w-6 opacity-60 group-hover:opacity-100 transition duration-200 ease-linear">
             <Icons.Plus className="text-background-nav-bar h-3 w-3" />
           </Box>
+        ) : type === 'likedSongs' ? (
+          <Box className="flex items-center justify-center h-6 w-6 bg-gradient-to-br from-purple to-soft-purple opacity-60 group-hover:opacity-100 transition duration-200 ease-linear">
+            <Icons.Like className="text-text h-3 w-3 group-hover:opacity-100 transition duration-200 ease-linear" />
+          </Box>
         ) : (
-          type === 'likedSongs' && (
-            <Box className="flex items-center justify-center h-6 w-6 bg-gradient-to-br from-purple to-soft-purple opacity-60 group-hover:opacity-100 transition duration-200 ease-linear">
-              <Icons.Like className="text-text h-3 w-3 group-hover:opacity-100 transition duration-200 ease-linear" />
-            </Box>
+          type === 'download' && (
+            <Icons.Download className="text-text h-5 w-5 opacity-60 group-hover:opacity-100 transition duration-200 ease-linear" />
           )
         )}
 
@@ -80,9 +82,11 @@ const NavBarButton: FunctionComponent<NavBarButtonContentType> = ({
             ? 'Kitaplığın'
             : type === 'createPlaylist'
             ? 'Çalma Listesi Oluştur'
-            : type === 'likedSongs' && 'Beğenilen Şarkılar'}
+            : type === 'likedSongs'
+            ? 'Beğenilen Şarkılar'
+            : type === 'download' && 'Uygulamayı Yükle'}
         </Text>
-      </Box>
+      </LinkBox>
     </Link>
   )
 }

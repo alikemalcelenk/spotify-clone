@@ -1,5 +1,6 @@
 export { default as Collection } from './Collection'
 export { default as CollectionActive } from './CollectionActive'
+export { default as Download } from './Download'
 export { default as Home } from './Home'
 export { default as HomeActive } from './HomeActive'
 export { default as Like } from './Like'

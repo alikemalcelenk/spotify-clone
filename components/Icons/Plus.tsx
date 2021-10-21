@@ -7,7 +7,6 @@ function SvgPlus(props: React.SVGProps<SVGSVGElement>) {
       width="1em"
       aria-hidden="true"
       viewBox="0 0 16 16"
-      className="plus_svg__Svg-sc-1bi12j5-0 plus_svg__gSLhUO"
       {...props}
     >
       <path fill="currentColor" d="M14 7H9V2H7v5H2v2h5v5h2V9h5z" />

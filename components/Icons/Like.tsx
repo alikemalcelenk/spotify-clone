@@ -7,7 +7,6 @@ function SvgLike(props: React.SVGProps<SVGSVGElement>) {
       width="1em"
       aria-hidden="true"
       viewBox="0 0 16 16"
-      className="like_svg__Svg-sc-1bi12j5-0 like_svg__gSLhUO"
       {...props}
     >
       <path fill="none" d="M0 0h16v16H0z" />
