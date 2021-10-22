@@ -29,6 +29,7 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
+          ['@app', '.'],
           ['@components', './components'],
           ['@elements', './components/Elements/index.tsx'],
           ['@pages', './pages'],

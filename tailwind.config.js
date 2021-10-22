@@ -16,6 +16,7 @@ module.exports = {
       'background-nav-bar': '#000000',
       'background-nav-bar-button': '#282828',
       'footer-top': '#282828',
+      'splitter-nav-bar': '#282828',
       text: '#FFFFFF'
     },
     extend: {
@@ -31,7 +32,11 @@ module.exports = {
       },
       fontFamily: {
         'sf-medium': ['SFProDisplay-Medium'],
-        'sf-semibold': ['SFProDisplay-SemiBold']
+        'sf-semibold': ['SFProDisplay-SemiBold'],
+        'sf-regular': ['SFProDisplay-Regular']
+      },
+      height: {
+        inherit: 'inherit'
       }
     }
   },

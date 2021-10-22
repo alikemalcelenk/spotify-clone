@@ -71,7 +71,7 @@ const NavBarButton: FunctionComponent<NavBarButtonContentType> = ({
         <Text
           className={`ml-4 ${
             selected === false &&
-            'text-text opacity-60 group-hover:opacity-100 transition duration-200 ease-linear'
+            'text-text font-sf-semibold opacity-60 group-hover:opacity-100 transition duration-200 ease-linear'
           }`}
         >
           {type === 'home'

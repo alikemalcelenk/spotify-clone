@@ -20,6 +20,9 @@
         // for alias
         "baseUrl": ".",
         "paths": {
+            "@app/*": [
+                "*"
+            ],
             "@components/*": [
                 "components/*"
             ],
