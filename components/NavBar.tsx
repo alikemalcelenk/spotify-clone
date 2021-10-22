@@ -35,7 +35,7 @@ const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
         />
       </Box>
 
-      <Box className="flex flex-col px-2 mt-6 flex-grow h-full">
+      <Box className="flex flex-col px-2 mt-6 flex-grow">
         <NavBarButton type="createPlaylist" />
         <NavBarButton type="likedSongs" />
 
@@ -43,7 +43,7 @@ const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
           <Box className="bg-splitter-nav-bar h-px w-full rounded" />
         </Box>
 
-        <Box className="flex relative h-full">
+        <Box className="flex relative flex-grow">
           <Box
             id="playlists-nav-bar"
             className="flex flex-col overflow-auto absolute h-full w-full inset-0 px-4"

@@ -34,9 +34,6 @@ module.exports = {
         'sf-medium': ['SFProDisplay-Medium'],
         'sf-semibold': ['SFProDisplay-SemiBold'],
         'sf-regular': ['SFProDisplay-Regular']
-      },
-      height: {
-        inherit: 'inherit'
       }
     }
   },
