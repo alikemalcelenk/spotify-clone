@@ -60,7 +60,7 @@ const NavBarButton: FunctionComponent<NavBarButtonContentType> = ({
           </Box>
         ) : type === 'likedSongs' ? (
           <Box className="flex items-center justify-center h-6 w-6 bg-gradient-to-br from-purple to-soft-purple opacity-60 group-hover:opacity-100 transition duration-200 ease-linear">
-            <Icons.Like className="text-text h-3 w-3 group-hover:opacity-100 transition duration-200 ease-linear" />
+            <Icons.LikeActive className="text-text h-3 w-3 group-hover:opacity-100 transition duration-200 ease-linear" />
           </Box>
         ) : (
           type === 'download' && (

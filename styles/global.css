@@ -30,14 +30,10 @@
 
   #playlists-nav-bar::-webkit-scrollbar {
     width: 8px;
-    height: 8px;
   }
   #playlists-nav-bar::-webkit-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.6);
     border-radius: 100vh;
-  }
-  #playlists-nav-bar::-webkit-scrollbar-button {
-    height: 3px;
   }
   #playlists-nav-bar::-webkit-scrollbar-thumb:hover {
     background: rgb(128, 128, 128);

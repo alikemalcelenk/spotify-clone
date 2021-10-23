@@ -9,6 +9,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      blue: colors.blue,
       purple: '#4101F5',
       'soft-purple': '#BEE9D7',
       'background-content': '#121212',
@@ -17,6 +18,9 @@ module.exports = {
       'background-nav-bar-button': '#282828',
       'footer-top': '#282828',
       'splitter-nav-bar': '#282828',
+      'play-bar-dark': '#535353',
+      'play-bar-soft': '#B3B3B3',
+      'spotify-green': '#3AB954',
       text: '#FFFFFF'
     },
     extend: {
@@ -28,12 +32,25 @@ module.exports = {
       },
       spacing: {
         '40px': '40px',
-        '131px': '131px'
+        '93px': '93px',
+        '131px': '131px',
+        '3/10': '30%'
       },
       fontFamily: {
+        'sf-regular': ['SFProDisplay-Regular'],
         'sf-medium': ['SFProDisplay-Medium'],
-        'sf-semibold': ['SFProDisplay-SemiBold'],
-        'sf-regular': ['SFProDisplay-Regular']
+        'sf-semibold': ['SFProDisplay-SemiBold']
+      },
+      fontSize: {
+        xxs: ['.7rem', '1rem']
+      },
+      minWidth: {
+        '180px': '180px',
+        '722px': '722px'
+      },
+      flex: {
+        3: 3,
+        4: 4
       }
     }
   },

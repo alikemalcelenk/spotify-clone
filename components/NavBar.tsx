@@ -4,7 +4,7 @@ import * as Icons from '@icons'
 
 import { Box, Text } from '@elements'
 
-import playlists from '@app/playlists' // ex playlists
+import playlists from '@app/data/playlists' // ex playlists
 
 import NavBarButton from './NavBarButton'
 
@@ -13,8 +13,8 @@ type NavBarContentType = {
 }
 
 const PlaylistCards = playlists.map((playlist) => (
-  <Box className="group py-1.5 cursor-pointer">
-    <Text className="truncate font-sf-regular opacity-60 group-hover:opacity-100 transition duration-200 ease-linear break-all">
+  <Box className="group py-1.5 cursor-default" key={playlist.id}>
+    <Text className="truncate font-sf-regular opacity-60 group-hover:opacity-100 transition duration-100 ease-linear break-all">
       {playlist.name}
     </Text>
   </Box>
@@ -26,6 +26,7 @@ const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
       <Box className="p-6 ">
         <Icons.Logo className="text-white h-40px w-131px" />
       </Box>
+
       <Box className="px-2">
         <NavBarButton selected={selectedPage === 'home'} type="home" />
         <NavBarButton selected={selectedPage === 'search'} type="search" />
@@ -52,6 +53,7 @@ const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
           </Box>
         </Box>
       </Box>
+
       <Box className="px-2 my-1 ">
         <NavBarButton type="download" />
       </Box>
