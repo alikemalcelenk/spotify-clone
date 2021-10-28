@@ -38,6 +38,10 @@
   #playlists-nav-bar::-webkit-scrollbar-thumb:hover {
     background: rgb(128, 128, 128);
   }
+
+  ::-webkit-scrollbar {
+    height: 0px;
+  }
 }
 
 @layer utilities {

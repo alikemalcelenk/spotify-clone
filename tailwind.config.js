@@ -31,6 +31,7 @@ module.exports = {
         content: '230px 1fr'
       },
       spacing: {
+        '9px': '9px',
         '40px': '40px',
         '93px': '93px',
         '131px': '131px',
@@ -46,6 +47,9 @@ module.exports = {
       },
       minWidth: {
         '180px': '180px',
+        '768px': '768px'
+      },
+      maxWidth: {
         '722px': '722px'
       },
       flex: {
@@ -55,7 +59,7 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    extend: { padding: ['hover'], height: ['hover'], width: ['hover'] }
   },
   plugins: []
 }

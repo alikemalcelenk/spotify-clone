@@ -23,7 +23,7 @@ const PlaylistCards = playlists.map((playlist) => (
 const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
   return (
     <Box className="flex flex-col bg-background-nav-bar">
-      <Box className="p-6 ">
+      <Box className="p-6">
         <Icons.Logo className="text-white h-40px w-131px" />
       </Box>
 
