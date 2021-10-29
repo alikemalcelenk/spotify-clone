@@ -11,6 +11,7 @@ module.exports = {
       white: colors.white,
       blue: colors.blue,
       purple: '#4101F5',
+      gray: '#333333',
       'soft-purple': '#BEE9D7',
       'background-content': '#121212',
       'background-footer': '#181818',
@@ -59,7 +60,7 @@ module.exports = {
     }
   },
   variants: {
-    extend: { padding: ['hover'], height: ['hover'], width: ['hover'] }
+    extend: { padding: ['hover'] }
   },
   plugins: []
 }
