@@ -19,9 +19,9 @@ const PageContentHeader: FunctionComponent = () => {
         </Box>
       </Box>
 
-      <Box className="flex bg-black rounded-full hover:bg-gray cursor-pointer">
+      <Box className="flex bg-black rounded-full hover:bg-gray-c cursor-pointer">
         <Box className="flex p-0.5">
-          <Box className="p-1.5 bg-gray rounded-full">
+          <Box className="p-1.5 bg-gray-c rounded-full">
             <Icons.User className="h-4 w-4 text-white opacity-100 cursor-default transition duration-200" />
           </Box>
         </Box>

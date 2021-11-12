@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { Box } from '@elements'
 
-import PageContentHeader from './PageContentHeader'
+import PageContentHeader from './HeaderPageContents'
 
 const ContentCollection: FunctionComponent = () => {
   return (

@@ -17,7 +17,7 @@ const Footer: FunctionComponent = () => {
           <Text className="overflow-ellipsis  break-all font-sf-regular cursor-pointer hover:underline transition duration-200">
             {song.name}
           </Text>
-          <Text className="overflow-ellipsis  break-all font-sf-regular text-xxs cursor-pointer opacity-60 hover:opacity-100 hover:underline transition duration-200">
+          <Text className="overflow-ellipsis break-all font-sf-regular text-xxs cursor-pointer opacity-60 hover:opacity-100 hover:underline transition duration-200">
             {song.artist}
           </Text>
         </Box>
