@@ -35,6 +35,9 @@
             "@icons": [
                 "components/Icons/index.tsx"
             ],
+            "@types": [
+                "config/types.ts"
+            ],
         }
     },
     "include": [

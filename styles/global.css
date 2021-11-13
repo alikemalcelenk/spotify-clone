@@ -28,19 +28,16 @@
       url('./fonts/subset-SFProDisplay-Regular.woff') format('woff');
   }
 
-  #playlists-nav-bar::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 8px;
   }
-  #playlists-nav-bar::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.6);
     border-radius: 100vh;
+    max-height: 20%;
   }
-  #playlists-nav-bar::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {
     background: rgb(128, 128, 128);
-  }
-
-  ::-webkit-scrollbar {
-    height: 0px;
   }
 }
 

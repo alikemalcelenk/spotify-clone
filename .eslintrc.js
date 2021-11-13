@@ -33,7 +33,8 @@ module.exports = {
           ['@components', './components'],
           ['@elements', './components/Elements/index.tsx'],
           ['@pages', './pages'],
-          ['@icons', './components/Icons/index.tsx']
+          ['@icons', './components/Icons/index.tsx'],
+          ['@types', './config/types.ts']
         ]
       }
     }
@@ -47,6 +48,8 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'no-nested-ternary': 'off',
+    'no-param-reassign': 'off',
+    'no-plusplus': 'off',
     'prettier/prettier': [
       'error',
       {

@@ -1,39 +1,43 @@
 import { FunctionComponent } from 'react'
 
-import { Box, Text, Section } from '@elements'
+import { Box } from '@elements'
 
-import playlists from '@app/data/playlists' // ex song
+import playlists from '@app/data/playlists' // ex playlists
 
 import PageContentHeader from './HeaderPageContents'
-import ItemCard from './ItemCard'
-
-// eslint-disable-next-line
-const PlaylistsMap = playlists.map((playlist, index) => {
-  if (index % 3 === 1) {
-    return <ItemCard item={playlist} type="song" />
-  }
-})
+import PageContentSection from './ContentHomeSection'
 
 const ContentHome: FunctionComponent = () => {
   return (
-    <Box className="bg-background-content px-4 lg:px-8">
-      <PageContentHeader />
-      <Box className="flex flex-col">
-        <Section>
-          <Box className=" flex justify-between items-end text-2xl my-5">
-            <Text className="text-2xl">İyi akşamlar</Text>
-            <Text className="text-xss opacity-60 cursor-pointer hover:underline">
-              HEPSİNİ GÖR
-            </Text>
-          </Box>
-
-          <Box
-            className="grid gap-x-6 grid-cols-autofill-itemcards-180 grid-rows-1fr 
-          auto-rows-0 overflow-y-hidden"
-          >
-            {PlaylistsMap}
-          </Box>
-        </Section>
+    <Box className="w-full bg-background-content px-4 lg:px-8 overflow-auto">
+      <Box className="w-full relative">
+        <PageContentHeader />
+        <Box className="w-full absolute">
+          <PageContentSection title="İyi akşamlar" playlists={playlists} />
+          <PageContentSection title="Çalma listelerin" playlists={playlists} />
+          <PageContentSection
+            title="Yakında çalınanlar"
+            playlists={playlists}
+          />
+          <PageContentSection
+            title="Kaldığın yerden devam et"
+            playlists={playlists}
+          />
+          <PageContentSection
+            title="Benzersiz seçimlerin"
+            playlists={playlists}
+          />
+          <PageContentSection
+            title="Son dinlediklerine dayanarak"
+            playlists={playlists}
+            className="mb-8"
+          />
+          <PageContentSection
+            title="En çok dinlediğin mix'ler"
+            playlists={playlists}
+            className="mb-8"
+          />
+        </Box>
       </Box>
     </Box>
   )

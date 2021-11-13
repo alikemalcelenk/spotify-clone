@@ -12,7 +12,7 @@ type NavBarContentType = {
   selectedPage: string
 }
 
-const PlaylistCards = playlists.map((playlist) => (
+const PlaylistsMap = playlists.map((playlist) => (
   <Box className="group py-1.5 cursor-default" key={playlist.id}>
     <Text className="truncate font-sf-regular opacity-60 group-hover:opacity-100 transition duration-100 ease-linear break-all">
       {playlist.name}
@@ -45,11 +45,8 @@ const NavBar: FunctionComponent<NavBarContentType> = ({ selectedPage }) => {
         </Box>
 
         <Box className="flex relative flex-grow">
-          <Box
-            id="playlists-nav-bar"
-            className="flex flex-col overflow-auto absolute h-full w-full inset-0 px-4"
-          >
-            {PlaylistCards}
+          <Box className="flex flex-col overflow-auto absolute h-full w-full inset-0 px-4">
+            {PlaylistsMap}
           </Box>
         </Box>
       </Box>
